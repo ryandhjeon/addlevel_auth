@@ -1,0 +1,98 @@
+// - - - - - - - - - - Variables - - - - - - - - - - //
+
+$white: #FFFFFF;
+$black: #000000;
+$dark_grey_1: #252525;
+$highlight: #0d94d0;
+$grey_background: #f2f1f8;
+$grey_copy: #b9b7cb;
+$dark_grey: #3f3d4e;
+$footer_link: #818181;
+
+// - - - - - - - - - - Global Styles - - - - - - - - - - //
+
+a {
+  color: $footer_link;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $highlight;
+}
+
+h4 {
+  color: $white;
+}
+
+#footer {
+  padding: 60px 0 60px 0;
+  background-color: $dark_grey_1;
+}
+
+.list-inline {
+  margin: 0
+}
+
+.list-block {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none
+}
+
+.list-block li {
+  margin-bottom: 5px
+}
+
+.list-block li a {
+  color: #818181
+}
+
+.list-block li a:hover {
+  text-decoration: none;
+  color: #3498db
+}
+
+.list-block li i {
+  margin-right: 10px;
+}
+
+.padd-tb-10 {
+  padding: 10px 0
+}
+
+.padd-tb-60 {
+  padding: 60px 0
+}
+
+.separator {
+  height: 1px;
+  background-color: #3498db;
+  margin-bottom: 20px;
+  width: 30px
+}
+
+.separator.small {
+  width: 20px
+}
+
+.separator.medium {
+  width: 30px
+}
+
+.separator.large {
+  width: 50px
+}
+
+.separator.full {
+  width: 100%
+}
+
+.separator.center {
+  margin: 0 auto
+}
+
+// - - - - - - - - - - Section Styles - - - - - - - - - - //
+#footer {
+
+}
+

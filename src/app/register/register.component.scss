@@ -1,0 +1,38 @@
+// - - - - - - - - - - Variables - - - - - - - - - - //
+
+$white: #FFFFFF;
+$black: #000000;
+$highlight: #0d94d0;
+$grey_background: #f2f1f8;
+$grey_copy: #b9b7cb;
+$dark_grey: #3f3d4e;
+$footer_link: #818181;
+
+
+// - - - - - - - - - - Global Styles - - - - - - - - - - //
+
+#register_wrap {
+  padding: 8rem 0 20rem 0;
+  h1 {
+    text-align: center;
+  }
+
+  h6{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .regForm {
+    padding: 2rem 0 0 0;
+  }
+}

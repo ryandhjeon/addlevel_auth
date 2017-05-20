@@ -1,0 +1,81 @@
+<section class="main-container">
+	<!-- Alert -->
+	<!-- <div class="alert alert-app-level"></div> -->
+
+
+	<!-- Header -->
+	<section id="header">
+		<clr-header class="header header-4">
+			<div class="branding">
+			  <a href="/" class="nav-link">
+			    <span class="title"><img src="../../images/addlevel_logo3.svg" width="80px" height="80px" alt="Header logo"> Project ALIS</span>
+			  </a>
+			</div>
+
+			<div class="header-nav">
+			  <a href="#" class="nav-link" [routerLink]="['/about']" [class.active]="router.url==='/about'"><span class="nav-text" >About</span></a>
+			  <a href="#" class="nav-link" [routerLink]="['/dashboard']" [class.active]="router.url==='/dashboard'"><span class="nav-text" >Dashboard</span></a>
+			  <a href="#" class="nav-link" [routerLink]="['/question']" [class.active]="router.url==='/question'"><span class="nav-text" >Questionnaire</span></a>
+			  <a href="#" class="nav-link" [routerLink]="['/subscription']" [class.active]="router.url==='/subscription'"><span class="nav-text" >Subscription</span></a>
+			  <a href="#" class="nav-link" [routerLink]="['/faq']" [class.active]="router.url==='/faq'"><span class="nav-text" >FAQ</span></a>
+			  <a href="#" class="nav-link" [routerLink]="['/support']" [class.active]="router.url==='/support'"><span class="nav-text" >Support</span></a>
+			</div>
+
+			<div class="header-actions">
+			    <section id="upgrade">
+				    <button type="submit" class="btn btn-success"><a href="#" class="nav-link" [routerLink]="['/subscription']" [class.active]="router.url==='/subscription'">Upgrade to Pro</a></button>
+			    </section>
+
+			  <clr-dropdown [clrMenuPosition]="'bottom-right'">
+				  <button class="nav-icon" clrDropdownToggle>
+				      <clr-icon shape="user"></clr-icon>
+				      <clr-icon shape="caret down"></clr-icon>
+				  </button>
+			   <div class="dropdown-menu">
+			   <!--Before logged in-->
+			     <a href="#" [routerLink]="['/register']" [class.active]="router.url==='/register'" clrDropdownItem>Register</a>
+				 <a href="#" [routerLink]="['/login']" [class.active]="router.url==='/login'" clrDropdownItem>Log in</a>
+
+		         <div class="dropdown-divider"></div>
+			   <!--when logged in-->
+			     <a href="#" [routerLink]="['/profile']" ng-show="isLoggedIn" [class.active]="router.url==='/profile'" clrDropdownItem>Profile</a>
+			     <a href="#" [routerLink]="['/login']" [class.active]="router.url==='/login'" clrDropdownItem>Log out</a>
+			   </div>
+			 </clr-dropdown>
+			</div>
+		</clr-header>
+	</section>
+
+	<!-- subnav -->
+	<nav class="subnav">
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Dashboard</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Management</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Cloud</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Tenants</a>
+			</li>
+		</ul>
+	</nav>
+
+
+	<!-- Container -->
+	<div class="content-container">
+		<div class="content-area">
+			<router-outlet></router-outlet>
+
+		</div>
+	</div>
+
+	<clr-footer></clr-footer>
+
+
+
+
+</section>

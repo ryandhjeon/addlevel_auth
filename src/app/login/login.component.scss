@@ -1,0 +1,22 @@
+// Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+// This software is released under MIT license.
+// The full license information can be found in LICENSE in the root directory of this project.
+
+#login-wrap{
+  padding: 8rem 0 20rem 0;
+  h1 {
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .loginForm {
+    padding: 2rem 0 0 0;
+  }
+}
